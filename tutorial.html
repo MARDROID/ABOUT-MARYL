@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript tutorial</title>
+
+</head>
+<body>
+   <h2>JavaScript tutorial</h2>
+   <p id="demo">I am writing this for practice</p>
+   <button type="button" onclick="myFunction()">This is a trial</button> 
+   
+<script>
+    function myFunction() {
+        document.getElementById("demo").innerHTML = "Paragraph changed.";
+        document.getElementById("demo").innerHTML="HELLO WORLD!!!";
+    }
+</script>
+  
+   <p id="demo">This is just a practice
+    <button onclick='document.getElementById("demo").style.display="none"';>Hide HTML element</button>
+    <button onclick='document.getElementById("demo").style.display="block"';>Show HTML element</button></p>
+   <img id="Image" src="pic_bulboff.gif" style="width:100px">
+   <button onclick="document.getElementById('Image').src='pic_bulbon.gif'">Turn on the light</button>
+   <button onclick="document.getElementById('Image').src='pic_bulboff.gif'">Turn off the light</button>
+   
+   <p id="demo0"></p>
+    <script>
+        document.getElementById("demo0").innerHTML=5+6;
+        document.write("SHE IS PRETTY");
+        //window.alert("This is your notification");
+        //alert("WELCOME!");
+        console.log("LOLADE OLADEJI");//THE CONSOLE.LOG WILL NOT REALLY MAKE A DIFFERENCE
+    </script>
+<!--Do not use document.write() because it will erase your code,only use it for testing--> 
+    <button onclick="window.print()">Print</button> <!--this is used to print the document from the browser directly-->
+    
+    <p id="demoint"></p>
+    <p id="demoin"></p>
+    <script>
+        let x, y, z;//let is used to declare variables that are in block
+        x = 4;      //we can write this on a straight line as long as they are all separated with a semicolon
+        y = 2;      //semicolons are used to separate each statement,tho it is not a must but it's recommended
+        z = x + y;
+        const price1 = 5;
+        const price2 = 6;
+        let total = price1 + price2;
+        document.getElementById("demoint").innerHTML="The value of z is " +z;
+        document.getElementById("demoin").innerHTML="total is " +total;
+        document.getElementById("demoint").innerHTML=(5 + 6) * 10;
+   </script>
+<!--WE should put spaces between our codes for clarity
+    We can create/declare variables by using let x, y, z ..... or var x orconst
+    We use them by saying x = 6; y = 7; let z = x+y;-->
+
+   <p id="demo1"></p>
+   <p id="demo2"></p>
+   <p id="demo3"></p>
+   <button type="button" onclick="myFunctions()">Click here</button>
+<script>
+    function myFunctions() {
+      document.getElementById("demo1").innerHTML = "Hello Dolly!";
+      document.getElementById("demo2").innerHTML = "How are you?";
+      document.getElementById("demo3").innerHTML = "John" +" "+ "Doe";
+    }
+
+</script>
+
+    <p id="carname"></p>
+
+    <script>
+    let carName = "Volvo";
+    document.getElementById("carname").innerHTML = carName;
+    </script>
+
+
+
+</body>
+</html>
